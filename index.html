@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Social Media Survey Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="col-100 border glassmorphism">
+          <h1 id="title" class="text-center color-white">
+            Social Media Survey Form
+          </h1>
+          <p id="description" class="description text-center color-white">
+            Thank you for taking the time to help us to take a Survey on Social
+            Media Daily Usage.
+          </p>
+
+          <form id="survey-form" style="padding: 40px 0px">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Ex: John "
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Ex: john@gmail.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number">Age</label>
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Ex: 28"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>How often do you check your social media account?</label>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select</option>
+                <option value="Hourly ">Hourly</option>
+                <option value=" Once in 2 - 3 days ">Once in 2 - 3 days</option>
+                <option value="Daily">Daily</option>
+                <option value=" Once a week ">Once a week</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label
+                >What devices do you use to access yor social media account?
+              </label>
+              <label>
+                <input
+                  name="user-recommend"
+                  value="SmartPhone "
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />
+                Smart Phone
+              </label>
+              <label>
+                <input
+                  name="user-recommend"
+                  value=" Laptop "
+                  type="radio"
+                  class="input-radio"
+                />
+                Laptop
+              </label>
+
+              <label
+                ><input
+                  name="user-recommend"
+                  value=" Tablet "
+                  type="radio"
+                  class="input-radio"
+                />
+                Tablet
+              </label>
+
+              <label
+                ><input
+                  name="user-recommend"
+                  value="  Desktop  "
+                  type="radio"
+                  class="input-radio"
+                />
+                Desktop
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label>
+                How many followers do you have on the social media account that
+                you most frequently use?
+              </label>
+              <select
+                id="most-like"
+                name="mostLike"
+                class="form-control"
+                required
+              >
+                <option disabled selected value>Select an option</option>
+                <option value="0-50">0-50</option>
+                <option value="51-100">51-100</option>
+                <option value="101-200">101-200</option>
+                <option value="500+">500+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>
+                Which of the social media accounts do you currently use? (Check
+                all that apply)</label
+              >
+
+              <label
+                ><input
+                  name="prefer"
+                  value="Instagram"
+                  type="checkbox"
+                  class="input-checkbox"
+                />
+                Instagram</label
+              >
+              <label>
+                <input
+                  name="prefer"
+                  value=" Twitter "
+                  type="checkbox"
+                  class="input-checkbox"
+                />
+                Twitter
+              </label>
+              <label
+                ><input
+                  name="prefer"
+                  value=" TikTok "
+                  type="checkbox"
+                  class="input-checkbox"
+                />
+                TikTok
+              </label>
+              <label
+                ><input
+                  name="prefer"
+                  value=" Facebook "
+                  type="checkbox"
+                  class="input-checkbox"
+                />
+                Facebook
+              </label>
+              <label
+                ><input
+                  name="prefer"
+                  value=" LinkedIn "
+                  type="checkbox"
+                  class="input-checkbox"
+                />
+                LinkedIn
+              </label>
+              <label
+                ><input
+                  name="prefer"
+                  value="Other Ex. Snapchat"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Other Ex. Snapchat</label
+              >
+            </div>
+
+            <div class="form-group">
+              <label> About your interests on social media?</label>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Write your interests here..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+
+            <div class="link">
+              <a
+                href="https://github.com/satishl12697/Tribute-Page"
+                target="_blank"
+                class="git-link"
+              >
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgMGgtMTRjLTIuNzYxIDAtNSAyLjIzOS01IDV2MTRjMCAyLjc2MSAyLjIzOSA1IDUgNWgxNGMyLjc2MiAwIDUtMi4yMzkgNS01di0xNGMwLTIuNzYxLTIuMjM4LTUtNS01em0tNC40NjYgMTkuNTljLS40MDUuMDc4LS41MzQtLjE3MS0uNTM0LS4zODR2LTIuMTk1YzAtLjc0Ny0uMjYyLTEuMjMzLS41NS0xLjQ4MSAxLjc4Mi0uMTk4IDMuNjU0LS44NzUgMy42NTQtMy45NDcgMC0uODc0LS4zMTItMS41ODgtLjgyMy0yLjE0Ny4wODItLjIwMi4zNTYtMS4wMTYtLjA3OS0yLjExNyAwIDAtLjY3MS0uMjE1LTIuMTk4LjgyLS42NC0uMTgtMS4zMjQtLjI2Ny0yLjAwNC0uMjcxLS42OC4wMDMtMS4zNjQuMDkxLTIuMDAzLjI2OS0xLjUyOC0xLjAzNS0yLjItLjgyLTIuMi0uODItLjQzNCAxLjEwMi0uMTYgMS45MTUtLjA3NyAyLjExOC0uNTEyLjU2LS44MjQgMS4yNzMtLjgyNCAyLjE0NyAwIDMuMDY0IDEuODY3IDMuNzUxIDMuNjQ1IDMuOTU0LS4yMjkuMi0uNDM2LjU1Mi0uNTA4IDEuMDctLjQ1Ny4yMDQtMS42MTQuNTU3LTIuMzI4LS42NjYgMCAwLS40MjMtLjc2OC0xLjIyNy0uODI1IDAgMC0uNzgtLjAxLS4wNTUuNDg3IDAgMCAuNTI1LjI0Ni44ODkgMS4xNyAwIDAgLjQ2MyAxLjQyOCAyLjY4OC45NDR2MS40ODljMCAuMjExLS4xMjkuNDU5LS41MjguMzg1LTMuMTgtMS4wNTctNS40NzItNC4wNTYtNS40NzItNy41OSAwLTQuNDE5IDMuNTgyLTggOC04czggMy41ODEgOCA4YzAgMy41MzMtMi4yODkgNi41MzEtNS40NjYgNy41OXoiLz48L3N2Zz4="
+                  style="padding: 0px 10px"
+                />Find Github Link
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
